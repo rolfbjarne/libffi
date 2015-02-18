@@ -34,3 +34,4 @@ libffi.xcodeproj/project.xcworkspace
 build_*/
 darwin_*/
 build/
+textinfo.tex
