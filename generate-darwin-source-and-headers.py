@@ -142,6 +142,7 @@ def build_target(platform, platform_headers):
     mkdir_p(build_dir)
     env = dict(CC=xcrun_cmd('clang'),
                LD=xcrun_cmd('ld'),
+               DEVELOPER_DIR=os.environ.get('DEVELOPER_DIR'),
                CFLAGS='%s' % (platform.version_min))
     working_dir = os.getcwd()
     try:
